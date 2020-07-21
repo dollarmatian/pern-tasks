@@ -1,13 +1,20 @@
-import React from 'react';
+import React, {Fragment} from 'react'
+import {InputTask} from "./components/inputTask"
+import {ListTasks} from "./components/listTasks"
 
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      
-    </div>
-  );
+ 
+<Fragment>
+  <div className="container">
+    <InputTask />
+    <ListTasks />
+  </div>
+</Fragment>
+   
+  )
 }
 
-export default App;
+export default App
